@@ -8,6 +8,7 @@
 
  "schema": 'SILVER'
 
+ "database": "PC_DBT_DB"
 })}}
 
  
