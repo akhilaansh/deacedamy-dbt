@@ -6,7 +6,7 @@
 
  "pre_hook": macros_copy_csv('WORK_PRODUCT_COPY'),
 
- "schema": 'SILVER'
+ "schema": 'SILVER',
 
  "database": "PC_DBT_DB"
 })}}
