@@ -58,6 +58,9 @@ FROM {{source('source','WORK_PRODUCT_COPY')}}
 
 )
 
+ 
+
 SELECT *
 
 FROM transform
+
