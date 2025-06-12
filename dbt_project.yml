@@ -11,9 +11,9 @@ profile: 'default'
 
 vars:
 
-   target_db: GLUEDB
-   target_schema: PUBLIC
-   stage_name: GLUEDB.PUBLIC.GLUE_S3_STAGE
+   target_db: MY_DB
+   target_schema: BRONZE
+   stage_name: MY_DB.BRONZE.S3_WALMART_STAGE
 
 # These configurations specify where dbt should look for different types of files.
 # The `model-paths` config, for example, states that models in this project can be
