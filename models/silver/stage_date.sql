@@ -1,7 +1,7 @@
 {{ config(materialized='view') }}
 
 select
-    MD5(CAST(DATE AS STRING)) AS DATE_ID,
+    ROW_NUMBER() OVER (ORDER BY date_column) AS Date_id,
     DATE,
     ISHOLIDAY,
     CURRENT_TIMESTAMP AS INSERT_DATE,
