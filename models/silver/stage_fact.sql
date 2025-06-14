@@ -5,10 +5,10 @@ SELECT
     s.Store_id,
     s.Dept_id,
     s.Store_size,
-    dept.Store_weekly_sales,
+    dept.weekly_sales AS Store_weekly_sales,
     fact.Fuel_price,
     fact.Temperature,
-    fact.Unemployement,
+    fact.unemployment,
     fact.CPI,
     fact.Markdown1,
     fact.Markdown2,
@@ -31,5 +31,5 @@ JOIN
    AND s.DEPT_ID = dept.dept
 JOIN 
     {{ ref('raw_fact') }} fact
-    ON fact.Date_id = d.DATE_ID
-   AND fact.Store_id = s.STORE_ID;
+    ON fact.date = d.DATE_ID
+   AND fact.store = s.STORE_ID

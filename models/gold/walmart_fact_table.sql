@@ -8,7 +8,7 @@ select
     Store_weekly_sales,
     Fuel_price,
     Temperature,
-    Unemployement,
+    unemployment,
     CPI,
     Markdown1,
     Markdown2,
