@@ -15,7 +15,7 @@ store_data AS (
     FROM {{ ref('raw_stores') }}
 )
 
-SELECT
+SELECT DISTINCT
     s.store AS STORE_ID,
     d.dept AS DEPT_ID,
     s.type AS STORE_TYPE,
@@ -25,3 +25,4 @@ SELECT
 FROM store_data s
 JOIN dept_data d
 ON s.store = d.store
+LIMIT 1

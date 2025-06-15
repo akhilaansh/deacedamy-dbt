@@ -1,7 +1,7 @@
 {{ config(materialized='view') }}
 
 select
-    ROW_NUMBER() OVER (ORDER BY date_column) AS Date_id,
+    ROW_NUMBER() OVER (ORDER BY DATE) AS Date_id,
     DATE,
     ISHOLIDAY,
     CURRENT_TIMESTAMP AS INSERT_DATE,

@@ -24,12 +24,11 @@ FROM
     {{ ref('stage_date') }} d
 JOIN 
     {{ ref('raw_department') }} dept
-    ON dept.date = d.Date_id
+    ON dept.date = d.DATE
 JOIN 
     {{ ref('stage_stores') }} s
     ON s.STORE_ID = dept.store
    AND s.DEPT_ID = dept.dept
 JOIN 
     {{ ref('raw_fact') }} fact
-    ON fact.date = d.DATE_ID
-   AND fact.store = s.STORE_ID
+    ON fact.store = s.STORE_ID
