@@ -1,0 +1,6 @@
+version: 2
+
+sources:
+  - name: public
+    tables:
+      - name: PBJ_DAILY_NURSE_STAFFING_Q2_2024

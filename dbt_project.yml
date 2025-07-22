@@ -2,7 +2,7 @@
 # Name your project! Project names should contain only lowercase characters
 # and underscores. A good package name should reflect your organization's
 # name or the intended use of these models
-name: 'my_walmart_project'
+name: 'my_healthcare_project'
 version: '1.0.0'
 config-version: 2
 
@@ -33,11 +33,5 @@ snapshot-paths: ["snapshots"]
 # using the `{{ config(...) }}` macro.
 
 models:
-  my_walmart_project:
+  my_healthcare_project:
     # Applies to all files under models/
-    bronze:
-          materialized: table
-    silver:
-          materialized: view
-    gold:
-          materialized: table
